@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# 開発環境を起動する
+#
+set -e;
+
+# アプリケーションのビルド
+./mvnw clean package;
+
+# アプリケーションの起動
+docker-compose up;
